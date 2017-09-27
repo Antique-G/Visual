@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+	  *{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	   }
+	   body{
+	   	position: relative;
+	   }
+	 .ss{
+		width: 1349px;
+		height: 90px;
+		/*border: 1px solid red;*/
+		position: relative;
+	   }
+	.ss>input{
+			width: 900px;
+			height: 60px;
+			font-size: 20px;
+			border: 1px solid #b6b6b6;
+			outline: none;
+			position: absolute;
+			left: 150px;
+			background-color: transparent;
+	}
+	.ss>button{
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 1000px;
+			background-color: red;
+			color: white;
+			border: none;
+	}
+	.ss>.ul{
+		width: 900px;
+		font-size: 20px;
+		border: 1px solid #b6b6b6;
+		position: absolute;
+		outline: none;
+		left: 150px;
+		top: 60px;
+		background-color: transparent;
+		display: none;
+		z-index: 1;
+	}
+	.ss>.ul>a{
+			width: 900px;
+			line-height: 36px;
+			display: block;
+			color: #000;
+			padding-left: 3px;
+			font-size: 14px;
+			text-decoration: none;
+			border-bottom: 1px dashed #ccc;
+			background-color: #fff;
+	}
+	.nav-tabs{
+		height: 60px;
+		line-height: 60px;
+		margin-left: 50px;
+		margin-top: 10px;
+	}
+	.nav-tabs>li{
+		width: 120px;
+		text-align: center;
+	}
+	.nav-tabs>li>a{
+		font-size: 14px;
+		color: #555;
+		font-family: "微软雅黑";
+	}
+	#home>ul>li,#profile>ul>li,#messages>ul>li,#settings>ul>li{
+		float: left;
+		margin-left: 10px;
+		margin-top: 8px;
+		
+	}
+	#ul,#ul1,#ul2,#ul3,#ul4{
+		width: 1300px;
+		margin-left: 50px;
+	}
+	.rd{
+	width: 70px;
+	height: 30px;
+	border-bottom: 2px solid red;
+	margin-left: 77px;
+	position: absolute;
+	top: 1470px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+.rdt{
+	width: 1200px;
+	margin-left: 60px;
+	position: absolute;
+	top: 1520px;
+	
+}
+.rdt>li{
+	float: left;
+	margin-left: 10px;
+}
+	.bottom{
+	width:1349px;
+	height:415px;
+	background-color: #333333;
+	position: absolute;
+	top: 1750px;
+}
+.bottom-top{
+	width: 1349px;
+	height: 293px;
+	position: relative;
+	border-bottom: 1px solid ghostwhite;
+}
+.bottom-ul{
+	width: 117px;
+	position: absolute;
+	top: 50px;
+	margin-left:35px ;
+}
+.bottom-ul>li>img{
+	width: 107px;
+}
+.bottom-div{
+	margin-left: 230px;
+}
+.bottom-ul1{
+	width: 895px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 50px;
+}
+
+.bottom-ul1>li{
+	float: left;
+	width: 145px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.bottom-ul1>li>a{
+	text-decoration: none;
+	color: #999999;
+}
+.bottom-ul2{
+	width: 745px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 70px;
+}
+.bottom-ul3{
+	width: 745px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 90px;
+}
+.bottom-ul4{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 110px;
+}
+.bottom-ul5{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 130px;
+}
+.bottom-ul6{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 150px;
+}
+.bottom-ul7{
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left:220px;
+	top: 173px;
+}
+.bottom-ul2>li,.bottom-ul3>li,.bottom-ul4>li,.bottom-ul5>li,.bottom-ul6>li{
+	float: left;
+	width: 145px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.bottom-ul2>li>a,.bottom-ul3>li>a,.bottom-ul4>li>a,.bottom-ul5>li>a,.bottom-ul6>li>a,.bottom-ul7>li>a{
+	text-decoration: none;
+	color: #4d5c6a;
+	font-size: 12px;
+}
+
+.img1{
+	position: absolute;
+	left: 930px;
+	top: 130px;
+	width: 80px;
+	transition:0.5s;
+}
+.img2{
+	position: absolute;
+	left: 1080px;
+	top: 130px;
+	width: 80px;
+	transition:0.5s;	
+}
+.img1:hover,.img2:hover{
+	width: 120px;
+}
+
+p>a,p1{
+	text-decoration: none;
+	color: #4d5c6a;
+	font-size: 14px;
+}
+
+	</style>
+	
+	</head>
+	<body>
+		<!--导航栏-->
+		<nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+    	
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="visual.html"><img src="../img/newlogo.png" style="width: 115px;height: 66px;"/></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav zt">
+        <li class="active"><a href="index.html" >首页<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="
+          	color: red!important;">创意图片 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">品牌列表</a></li>
+            <li><a href="#">Getty专区</a></li>
+            <li><a href="#">500px专区</a></li>
+            <li><a href="#">Corbis专区</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">编辑图片 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="edit-pictures.html">专题汇总</a></li>
+            <li><a href="#">bettmann专区</a></li>
+          </ul>
+        </li>
+        <li><a href="#">视频素材</a></li>
+        <li><a href="#">音乐素材</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">增值服务 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">商业委托拍摄</a></li>
+            <li><a href="#">事件委托拍摄</a></li>
+            <li><a href="#">媒体推广</a></li>
+            <li><a href="#">权利清除</a></li>
+            <li><a href="#">创意征集</a></li>
+            <li><a href="#">数字资产管理</a></li>
+            <li><a href="#">视觉中国API</a></li>
+            
+          </ul>
+        </li>
+         
+         <li><a href="#">供稿人登录</a></li>
+         <li><a href="#">
+         	<img src="../img/phone.png">
+			<span>400-818-2525</span></a>
+         </li>
+             <li><a href="#"><img src="../img/phone1.png" style="width: 30px;height: 30px;"></a></li>
+             <li><a href="login.html">登录</a></li>
+             <li><a href="register.html">注册</a></li>
+         </ul>
+      
+     
+    </div>
+  </div>
+</nav>
+
+      <!--搜索框-->
+      <div class="ss">
+      	<input type="text" name="" id="" value="" placeholder="请输入ID或关键字查询" class="ipt"/>
+      	<button>搜索</button>
+      	<ul class="ul"></ul>
+      </div>
+      
+      <!--轮播照片-->
+			<div class="lun">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="../img/a4.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">道路</div>
+				</div>
+				<div class="item">
+					<img src="../img/a3.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">旅游</div>
+				</div>
+				<div class="item">
+					<img src="../img/a2.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">梦幻星空</div>
+				</div>
+				<div class="item">
+					<img src="../img/a5.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">Gretty image精选</div>
+				</div>
+				<div class="item">
+					<img src="../img/a6.jpg" alt="...">
+					<div class="carousel-caption  animated bounce" style="font-size: 20px!important;">节气</div>
+				</div>
+			</div>
+			
+			
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		</div>
+		
+		<div class="pic">
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#home" aria-controls="home" role="tab" data-toggle="tab">500px</a>
+				</li>
+				<li role="presentation">
+					<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">秋分</a>
+				</li>
+				<li role="presentation">
+					<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">韩国创意品牌</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">AI人工智能</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">生活方式</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">健身</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">自然风光 </a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">航拍</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">矢量插画</a>
+				</li>
+				<li role="presentation">
+					<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">创意插画</a>
+				</li>
+			  
+				
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">
+					<ul id="ul"></ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="profile">
+					<ul id="ul1"></ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="messages">
+					<ul id="ul2"></ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="settings">
+					<ul id="ul3"></ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="rd"><p>热点活动</p></div>
+		<ol class="rdt">
+			<li><img src="../img/v8.jpg" class="img-circle"/></li>
+			<li><img src="../img/v9.jpg" class="img-circle"/></li>
+			<li><img src="../img/v10.jpg" class="img-circle"/></li>
+		</ol>
+		
+		<div class="bottom">
+				<div class="bottom-top">
+					<ul class="bottom-ul">
+						<li><img src="../img/newlogo.png"/></li>
+					</ul>
+					<ul class="bottom-ul1">
+						<li><a href="">业务介绍</a></li>
+						<li><a href="">精选专区</a></li>
+						<li><a href="">其他网站</a></li>
+						<li><a href="">供稿人专区</a></li>
+						<li><a href="">语言</a></li>
+						<li><a href="">社交媒体</a></li>
+						
+					</ul>
+					<ul class="bottom-ul2">
+						<li><a href="">创意图片</a></li>
+						<li><a href="">Getty Images</a</li>
+						<li><a href="">集团网站</a></li>
+						<li><a href="">供稿人专区</a></li>
+						<li><a href="">语言</a></li>
+					</ul>
+					<ul class="bottom-ul3">
+						<li><a href="">编辑图片</a></li>
+						<li><a href="">500PX</a></li>
+						<li><a href="">设计社区</a></li>
+						<li><a href="">编辑类供稿人登陆</a></li>
+						<li><a href="">English</a></li>
+					</ul>
+					<ul class="bottom-ul4">
+						<li><a href="">视频素材</a></li>
+						<li><a href="">Corbis</a></li>
+						<li><a href="">摄影社区</a></li>
+					</ul>
+					<ul class="bottom-ul5">
+						<li><a href="">音乐素材</a></li>
+						<li><a href="">Bettmann</a></li>
+						<li><a href="">艾特凡斯</a></li>
+					</ul>
+					<ul class="bottom-ul6">
+						<li><a href="">视觉中国API</a></li>
+						<li><a href=""></li>
+						<li><a href="">东星娱乐</a></li>
+					</ul>
+					<ul class="bottom-ul7">
+						<li><a href="">服务</a></li>
+						<li><a href="">社区</a></li>
+						<li><a href="">品牌列表</a></li>
+					</ul>
+					<button class="btn btn-default" style="position: absolute; left: 900px; top: 80px;background-color: #333333;">
+					<span style="color: #4D5C6A;">视觉中国集团微信</span>
+					</button>
+					<button class="btn btn-default" style="position: absolute; left: 1050px; top: 80px;background-color: #333333;">
+					<span style="color: #4D5C6A;">VCG影像微信</span>
+					</button>
+					<img src="../img/erwerma.jpg" class="img1"/>
+					<img src="../img/erweima1.jpg"  class="img2"/>				
+				</div>
+				<div style="margin-left: 70px;">
+				<p>
+					<a href="">关于我们  |  </a>
+					<a href="">新闻中心  |  </a>
+					<a href="">投资者关系  |  </a>
+					<a href="">帮助中心  |  </a>
+					<a href="">联系我们  |  </a>
+					<a href="">招聘信息  |  </a>
+					<a href="">授权信息  |  </a>
+					<a href="">网站条款  |  </a>
+					<a href="" style="color: red;">法律声明  </a>
+				</p>
+				<p1>版权申明  |  津ICP备13002056号-2 天津市武清公安分局&nbsp;注：此网站版权属于汉华易美（天津）图像技术有限公司</p1>
+				</div>
+			</div>
+
+		
+		<script>
+			var dataImg=[
+			{"src":"../img/c1.jpg"},
+			{"src":"../img/c2.jpg"},
+			{"src":"../img/c3.jpg"},
+			{"src":"../img/c4.jpg"},
+			{"src":"../img/c5.jpg"},
+			{"src":"../img/c6.jpg"},
+			{"src":"../img/c7.jpg"},
+			{"src":"../img/c8.jpg"},
+			{"src":"../img/c9.jpg"},
+			{"src":"../img/c10.jpg"},
+			{"src":"../img/c11.jpg"}
+			]
+			var dataImg1=[
+			{"src":"../img/q1.jpg"},
+			{"src":"../img/q2.jpg"},
+			{"src":"../img/q3.jpg"},
+			{"src":"../img/q4.jpg"},
+			{"src":"../img/q5.jpg"},
+			{"src":"../img/q6.jpg"},
+			{"src":"../img/q7.jpg"},
+			{"src":"../img/q8.jpg"},
+			{"src":"../img/q9.jpg"},
+			{"src":"../img/q10.jpg"},
+			{"src":"../img/q11.jpg"}
+			]
+			
+			var oUl=document.getElementById("ul");
+			for(var i = 0; i < dataImg.length; i++) {
+				oUl.innerHTML += "<li><img src='" + dataImg[i].src + "'></li>"
+			}
+			var oUl1=document.getElementById("ul1");
+			for(var i = 0; i < dataImg1.length; i++) {
+				oUl1.innerHTML += "<li><img src='" + dataImg1[i].src + "'></li>"
+			}
+			var oUl2=document.getElementById("ul2");
+			for(var i = 0; i < dataImg.length; i++) {
+				oUl2.innerHTML += "<li><img src='" + dataImg[i].src + "'></li>"
+			}
+			var oUl3=document.getElementById("ul3");
+			for(var i = 0; i < dataImg1.length; i++) {
+				oUl3.innerHTML += "<li><img src='" + dataImg1[i].src + "'></li>"
+			}
+			var oUl4=document.getElementById("ul4");
+			for(var i = 0; i < dataImg.length; i++) {
+				oUl4.innerHTML += "<li><img src='" + dataImg[i].src + "'></li>"
+			}
+		
+			
+		</script>
+	</body>
+</html>

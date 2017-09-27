@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/visual.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+			function fn(data){
+					var ul = document.getElementsByClassName("ul")[0];
+					var html = "";
+					if(data.s.length){
+						ul.style.display = "block"
+						for(var i=0;i<data.s.length;i++){
+							//html += '<li><a target="_blank" href='"+https://www.baidu.com/s?wd="+data.s[i]+"+"'>"+data.s[i]+"</a></li>"
+							html += "<li><a target='_blank' href='https://www.vcg.com/creative/search?per_page=100&page=1&phrase=%E5%9B%BE%E7%89%87%E8%A7%86%E8%A7%89%E6%95%88%E6%9E%9C&sort=0&rand=RDIS3B28DA1ETCSFKRR0_51f06b61e9f5883198da81232edef5de?wd="+data.s[i]+"'>"+data.s[i]+"</a></li>"
+						}
+						ul.innerHTML = html;
+					}else{
+						ul.style.display = "none"
+					}
+				}
+			window.onload = function(){
+				var ipt = document.getElementsByClassName("ipt")[0];
+				var ul = document.getElementsByClassName("ul")[0];
+				
+				ipt.onkeyup = function(){
+					if(this.value!=""){
+						var script = document.createElement("script");
+						//script.src = "http://suggestion.baidu.com/su?wd="+this.value+"&cb=fn"
+						script.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+this.value+"&cb=fn"
+						document.body.appendChild(script);
+						
+					}else{
+						ul.style.display = "none"
+					}
+				}
+				
+				}
+			
+		</script>
+	</head>
+	
+	<body>
+		<!--导航栏-->
+		<nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+    	
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img src="../img/newlogo.png" style="width: 115px;height: 66px;"/></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav zt">
+        <li class="active"><a href="index.html" style="color: red;">首页<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">创意图片 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="create-pictures.html">品牌列表</a></li>
+            <li><a href="#">Getty专区</a></li>
+            <li><a href="#">500px专区</a></li>
+            <li><a href="#">Corbis专区</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">编辑图片 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="edit-pictures.html">专题汇总</a></li>
+            <li><a href="#">bettmann专区</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:;">视频素材</a></li>
+        <li><a href="javascript:;">音乐素材</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">增值服务 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="api.html">视觉中国API</a></li>
+            <li><a href="#">事件委托拍摄</a></li>
+            <li><a href="#">媒体推广</a></li>
+            <li><a href="#">权利清除</a></li>
+            <li><a href="#">创意征集</a></li>
+            <li><a href="#">数字资产管理</a></li>
+            <li><a href="#">商业委托拍摄</a></li>
+            
+          </ul>
+        </li>
+         
+         <li><a href="loginer.html">供稿人登录</a></li>
+         <li><a href="#">
+         	<img src="../img/phone.png">
+			<span>400-818-2525</span></a>
+         </li>
+             <li><a href="#"><img src="../img/phone1.png" style="width: 30px;height: 30px;"></a></li>
+             <li><a href="login.html">登录</a></li>
+             <li><a href="register.html">注册</a></li>
+         </ul>
+      
+     
+    </div>
+  </div>
+</nav>
+
+      <!--搜索框-->
+      <div class="ss">
+      	<input type="text" name="" id="" value="" placeholder="请输入ID或关键字查询" class="ipt"/>
+      	<button>搜索</button>
+      	<ul class="ul"></ul>
+      </div>
+      
+      <!--轮播照片-->
+			<div class="lun">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="../img/a2.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">梦幻星空</div>
+				</div>
+				<div class="item">
+					<img src="../img/a3.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">旅游</div>
+				</div>
+				<div class="item">
+					<img src="../img/a4.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">道路</div>
+				</div>
+				<div class="item">
+					<img src="../img/a5.jpg" alt="...">
+					<div class="carousel-caption animated bounce" style="font-size: 20px!important;">Gretty image精选</div>
+				</div>
+				<div class="item">
+					<img src="../img/a6.jpg" alt="...">
+					<div class="carousel-caption  animated bounce" style="font-size: 20px!important;">节气</div>
+				</div>
+			</div>
+			
+			
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		</div>
+		
+		<div class="wrap">
+				<!--两个按钮-->
+				<div class="wrap1">
+					<div class="dropdown">
+					  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+					    汇聚全球高端视觉内容
+					    <span class="caret"></span>
+					  </button>
+					  <ul class=" dropdown-menu  dropdown-tp" >
+					    <li>创意图片<img src="../img/b1.jpg" /></li>
+					    <li>编辑图片<img src="../img/b2.jpg"/></li>
+					    <li>历史档案<img src="../img/b3.jpg"/></li>
+					    <li>视频素材<img src="../img/b4.jpg"/></li>
+					  </ul>
+					  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 590px;height: 75px;"> 
+					    视觉相关服务
+					    <span class="caret"></span>
+					  </button>
+					  
+					</div>
+				</div>
+				
+				<!--图片-->
+				<div class="wrap-gu">
+					<ul>
+						<li>
+							<img src="../img/v1.jpg"/>
+						    <span class="animated bounceInLeft" style="left: 100px;">水上运动</span>
+						</li>
+						<li>
+							<img src="../img/v2.jpg"/>
+							<span class="animated bounceInLeft" style="left: 400px;">绿</span>
+						</li>
+						<li>
+							<img src="../img/v3.jpg"/>
+							<span class="animated bounceInLeft" style="left: 700px;">城市风光</span>
+						</li>
+						<li>
+							<img src="../img/v4.jpg"/>
+							<span class="animated bounceInLeft" style="left: 1000px;">爱情</span>
+							
+						</li>
+						<li>
+							<img src="../img/v5.jpg"/>
+							<span class="animated bounceInLeft" style="left: 100px;top: 460px;">爱情</span>
+						</li>
+						<li>
+							<img src="../img/v6.jpg"/>
+							<span class="animated bounceInLeft" style="left: 500px;top: 460px;">秋·生活着</span>
+						</li>
+						<li>
+							<img src="../img/v7.jpg"/>
+							<span class="animated bounceInLeft" style="left: 900px;top: 460px;">AI人工智能</span>
+						</li>	
+					</ul>
+					
+					<div class="rd">
+						<p>热点活动</p>
+					</div>	
+					<ol>
+						<li><img src="../img/v8.jpg"/></li>
+						<li><img src="../img/v9.jpg"/></li>
+						<li><img src="../img/v10.jpg"/></li>
+					</ol>
+				</div>
+				
+			</div>
+			
+			<div class="bottom">
+				<div class="bottom-top">
+					<ul class="bottom-ul">
+						<li><img src="../img/newlogo.png"/></li>
+					</ul>
+					<ul class="bottom-ul1">
+						<li><a href="">业务介绍</a></li>
+						<li><a href="">精选专区</a></li>
+						<li><a href="">其他网站</a></li>
+						<li><a href="">供稿人专区</a></li>
+						<li><a href="">语言</a></li>
+						<li><a href="">社交媒体</a></li>
+						
+					</ul>
+					<ul class="bottom-ul2">
+						<li><a href="">创意图片</a></li>
+						<li><a href="">Getty Images</a</li>
+						<li><a href="">集团网站</a></li>
+						<li><a href="">供稿人专区</a></li>
+						<li><a href="">语言</a></li>
+					</ul>
+					<ul class="bottom-ul3">
+						<li><a href="">编辑图片</a></li>
+						<li><a href="">500PX</a></li>
+						<li><a href="">设计社区</a></li>
+						<li><a href="">编辑类供稿人登陆</a></li>
+						<li><a href="">English</a></li>
+					</ul>
+					<ul class="bottom-ul4">
+						<li><a href="">视频素材</a></li>
+						<li><a href="">Corbis</a></li>
+						<li><a href="">摄影社区</a></li>
+					</ul>
+					<ul class="bottom-ul5">
+						<li><a href="">音乐素材</a></li>
+						<li><a href="">Bettmann</a></li>
+						<li><a href="">艾特凡斯</a></li>
+					</ul>
+					<ul class="bottom-ul6">
+						<li><a href="">视觉中国API</a></li>
+						<li><a href=""></li>
+						<li><a href="">东星娱乐</a></li>
+					</ul>
+					<ul class="bottom-ul7">
+						<li><a href="">服务</a></li>
+						<li><a href="">社区</a></li>
+						<li><a href="">品牌列表</a></li>
+					</ul>
+					<button class="btn btn-default" style="position: absolute; left: 900px; top: 80px;background-color: #333333;">
+					<span style="color: #4D5C6A;">视觉中国集团微信</span>
+					</button>
+					<button class="btn btn-default" style="position: absolute; left: 1050px; top: 80px;background-color: #333333;">
+					<span style="color: #4D5C6A;">VCG影像微信</span>
+					</button>
+					<img src="../img/erwerma.jpg" class="img1"/>
+					<img src="../img/erweima1.jpg"  class="img2"/>				
+				</div>
+				<div style="margin-left: 70px;">
+				<p>
+					<a href="">关于我们  |  </a>
+					<a href="">新闻中心  |  </a>
+					<a href="">投资者关系  |  </a>
+					<a href="">帮助中心  |  </a>
+					<a href="">联系我们  |  </a>
+					<a href="">招聘信息  |  </a>
+					<a href="">授权信息  |  </a>
+					<a href="">网站条款  |  </a>
+					<a href="" style="color: red;">法律声明  </a>
+				</p>
+				<p1>版权申明  |  津ICP备13002056号-2 天津市武清公安分局&nbsp;注：此网站版权属于汉华易美（天津）图像技术有限公司</p1><br />
+				  <div id="dt">
+				  	<p2 style="color: red;">公司地址：北京市朝阳区酒仙桥北路7号电通创意广场2号楼A区</p2>
+				  	<div id="myMap"></div>
+				  </div>
+					
+					
+		
+				</div>
+				</div>
+			</div>
+			<!--先引入百度地图api的js-->
+		<script src="http://api.map.baidu.com/api?v=1.3"></script>
+		<script type="text/javascript">
+			//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				addMarker(); //向地图中添加marker
+			}
+
+			//创建地图函数：
+			function createMap() {
+				var map = new BMap.Map("myMap"); //在百度地图容器中创建一个地图
+				var point = new BMap.Point(116.506654,39.998029); //定义一个中心点坐标
+				map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+				window.map = map; //将map变量存储在全局
+			}
+
+			//地图事件设置函数：
+			function setMapEvent() {
+				map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+				map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+				map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+				map.enableKeyboard(); //启用键盘上下左右键移动地图
+				map.disableScrollWheelZoom();//禁止滚轮放大
+			}
+
+			//地图控件添加函数：
+			function addMapControl() {
+				//向地图中添加缩放控件
+				var ctrl_nav = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(ctrl_nav);
+				//向地图中添加缩略图控件
+				var ctrl_ove = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: 1
+				});
+				map.addControl(ctrl_ove);
+				//向地图中添加比例尺控件
+				var ctrl_sca = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				map.addControl(ctrl_sca);
+			}
+
+			//标注点数组
+			var markerArr = [
+				{
+					title: "北京市朝阳区酒仙桥北路7号电通创意广场2号楼A区",
+					content: "欢迎你",
+					point: "116.506654|39.998029",
+					isOpen: 0,
+					icon: {
+						w: 21,
+						h: 21,
+						l: 0,
+						t: 0,
+						x: 6,
+						lb: 5
+					}
+				}
+				
+			];
+			//创建marker
+			function addMarker() {
+				for(var i = 0; i < markerArr.length; i++) {
+					var json = markerArr[i];
+					var p0 = json.point.split("|")[0];
+					var p1 = json.point.split("|")[1];
+					var point = new BMap.Point(p0, p1);
+					var iconImg = createIcon(json.icon);
+					var marker = new BMap.Marker(point, {
+						icon: iconImg
+					});
+					var iw = createInfoWindow(i);
+					var label = new BMap.Label(json.title, {
+						"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+					});
+					marker.setLabel(label);
+					map.addOverlay(marker);
+					label.setStyle({
+						borderColor: "#808080",
+						color: "#333",
+						cursor: "pointer"
+					});
+
+					(function() {
+						var index = i;
+						var _iw = createInfoWindow(i);
+						var _marker = marker;
+						_marker.addEventListener("click", function() {
+							this.openInfoWindow(_iw);
+						});
+						_iw.addEventListener("open", function() {
+							_marker.getLabel().hide();
+						})
+						_iw.addEventListener("close", function() {
+							_marker.getLabel().show();
+						})
+						label.addEventListener("click", function() {
+							_marker.openInfoWindow(_iw);
+						})
+						if(!!json.isOpen) {
+							label.hide();
+							_marker.openInfoWindow(_iw);
+						}
+					})()
+				}
+			}
+			//创建InfoWindow
+			function createInfoWindow(i) {
+				var json = markerArr[i];
+				var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+				return iw;
+			}
+			//创建一个Icon
+			function createIcon(json) {
+				var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+					imageOffset: new BMap.Size(-json.l, -json.t),
+					infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+					offset: new BMap.Size(json.x, json.h)
+				})
+				return icon;
+			}
+
+			initMap(); //创建和初始化地图
+			$(function(){
+				$("#dt>p2").click(function(){
+					$("#myMap").css({"width":"100vw",
+					"left":"400px",
+					"height":"100vh"})
+				})
+			})
+			
+		</script>
+	</body>
+</html>

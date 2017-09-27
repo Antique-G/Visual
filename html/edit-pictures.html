@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css"/>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js" ></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.10.3.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body{
+				height: 3000px;
+			}
+			.top{
+				width: 100%;
+				height: 80px;
+				position: fixed;
+				z-index: 1;
+			}
+			
+			.navbar-brand>img{
+				width: 115px;
+				height: 66px;
+			}
+			.col>li:hover{
+				background-color: pink;
+				
+			}
+			.col>li:hover a{
+				color: white;
+			}
+			#fullpage>div{
+				color: #fff;
+				font-size: 100px;
+				line-height: 100vh;
+				text-align: center
+				margin-bottom:0px
+			}
+			.section>img{
+				width: 100vw;
+				height: 100vh;
+			}
+			#fullpage>div:nth-of-type(1){
+				background-image: url("../img/edit1-1.jpg");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div:nth-of-type(2){
+				background-image: url("../img/edit2-1.jpg");
+				background-size: 100vw 100vh;
+				
+			}
+			#fullpage>div:nth-of-type(3){
+				background-image: url("../img/edit3-1.jpg");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div:nth-of-type(4){
+				background-image: url("../img/edit4-1.png");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div:nth-of-type(5){
+				background-image: url("../img/edit5-1.jpg");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div:nth-of-type(6){
+				background-image: url("../img/edit6-1.png.jpg");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div:nth-of-type(7){
+				background-image: url("../img/edit7-1.jpg");
+				background-size: 100vw 100vh;
+			}
+			#fullpage>div{
+				margin: 0!important;
+			}
+			.section>div{
+				position: absolute;
+				left: 1050px;
+				top: 200px;
+				font-size: 30px;
+			}
+			.section>a{
+				text-decoration: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="top">
+		<!--navbar-inverse黑底白字导航条-->
+		<nav class="navbar navbar-default" style="height: 80px;">
+			<div class="container">
+				<!--以下做小屏幕折叠(隐藏)导航-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+					<a class="navbar-brand" href="visual.html"><img src="../img/newlogo.png"/></a>
+				</div>
+				<!--以上做小屏幕折叠(隐藏)导航-->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px;">
+					<ul class="nav navbar-nav col" style="font-size: 16px;font-family: '微软雅黑';">
+						<li class="">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="create-pictures.html">创意图片</a>
+						</li>
+						<li>
+							<a href="#" style="color: red;">编辑图片</a>
+						</li>
+						<li>
+							<a href="#">视频素材</a>
+						</li>
+						<li>
+							<a href="#">音乐素材</a>
+						</li>
+						<li>
+							<a href="api.html">增值服务</a>
+						</li>
+						<li>
+							<a href="loginer.html">供稿人登录</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><img src="../img/phone.png" /></li>
+						<li><span>400-818-2525</span></li>
+						<li><img src="../img/phone1.png"></li>
+						<li><a  href="login.html" style="color: black;">登录 /</a></li>
+						<li><a  href="register.html" style="color: black;">注册</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		</div>
+		<div id="fullpage">
+			<div class="section ">
+				<span >JOEL SAGET</span>
+			</div>
+			<div class="section">
+				<span >综合新闻</span>
+			</div>
+			<div class="section">
+				<span>体育</span>
+			</div>
+			<div class="section">
+				<span>娱乐 时尚</span>
+			</div>
+			<div class="section">
+				<span>历史</span>
+			</div>
+			<div class="section">
+				<span style="color: black;position: absolute;left: -1000px;top: 5px;">肖像</span>
+			</div>
+			<div class="section">
+				<a href="#" class="aa">戳我有惊喜</a>
+				
+			</div>
+		</div>
+			<script type="text/javascript">
+			$(function(){
+			    $('#fullpage').fullpage({
+			    	"scrollingSpeed":1000,//滚动速度
+			    	"navigation":true,//点点点
+			    	"navigationPosition":"right",//点点点的位置
+					"controlArrowColor":"#000",
+					"loopBottom":false,
+					afterLoad : function(anchorLink,index){
+						if(index===4){
+				    		$("p").addClass("animated bounceIn")
+				    	}
+						
+					},
+					onLeave: function(index,nextIndex,direction){
+				    	if(index===4){
+				    		$("p").removeClass("animated bounceIn")
+				    	}
+				    }
+			    });//激活fullpage
+			   
+			});
+			 var a=document.getElementsByClassName("aa")[0];
+			 a.onclick=function(){
+			 	alert("恭喜潘正成为我站VVIP，您可以终生免费使用我站图片！")
+			 }
+		</script>	
+	</body>
+</html>

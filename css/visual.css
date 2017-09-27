@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.zt{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+.ss{
+	width: 1349px;
+	height: 90px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.ss>input{
+		width: 900px;
+		height: 60px;
+		font-size: 20px;
+		border: 1px solid #b6b6b6;
+		outline: none;
+		position: absolute;
+		left: 150px;
+		background-color: transparent;
+}
+.ss>button{
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		left: 1000px;
+		background-color: red;
+		color: white;
+		border: none;
+}
+.ss>.ul{
+	width: 900px;
+	font-size: 20px;
+	border: 1px solid #b6b6b6;
+	position: absolute;
+	outline: none;
+	left: 150px;
+	top: 60px;
+	background-color: transparent;
+	display: none;
+	z-index: 1;
+}
+.ss>.ul>a{
+		width: 900px;
+		line-height: 36px;
+		display: block;
+		color: #000;
+		padding-left: 3px;
+		font-size: 14px;
+		text-decoration: none;
+		border-bottom: 1px dashed #ccc;
+		background-color: #fff;
+}
+.wrap{
+	width: 1349px;
+	height: 895px;
+	/*background-color: pink;*/
+}
+.wrap1{
+	width: 1349px;
+	height: 122px;
+	/*background-color: pink;*/
+}
+#dLabel{
+	width: 590px;
+	height: 75px;
+	margin-left: 50px;
+	margin-top: 25px;
+	font-size: 20px;
+	border: none;
+}
+#dLabel:hover{
+	color: white;
+	background-color: #393939;
+	border: none;	
+}
+.dropdown-tp{
+	position: absolute;
+	width: 1349px;
+	height: 290px;
+	background-color:#393939 !important;
+	display: none;
+	top: 100%;
+	z-index: 1;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	list-style: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.dropdown-tp>li{
+	width: 286px;
+	height: 220px;
+	float: left;
+	color: white !important;
+	margin-left: 35px;
+	margin-top: 30px;
+	line-height: 50px;
+}
+.wrap-gu{
+	width: 1349px;
+	position: relative;
+}
+.wrap-gu>ul{
+	width: 1200px;
+	margin-left: 77px;
+}
+.wrap-gu>ul>li{
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px ;
+	cursor: pointer;
+}
+.wrap-gu>ul>li>span{
+	position: absolute;
+	left: 100px;
+	top: 210px;
+	color: white;
+	opacity: 0.5;
+	transition: 1s;
+	font-size: 20px;
+}
+.wrap-gu>ul>li:hover span{
+	opacity: 1;
+}
+.wrap-gu>.rd{
+	width: 70px;
+	height: 30px;
+	border-bottom: 2px solid red;
+	margin-left: 77px;
+	position: absolute;
+	top: 523px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+.wrap-gu>ol{
+	width: 1200px;
+	margin-left: 77px;
+	position: absolute;
+	top: 560px;
+	
+}
+.wrap-gu>ol>li{
+	float: left;
+	margin-left: 7px ;
+}
+.bottom{
+	width:1349px;
+	height:415px;
+	background-color: #333333;
+}
+.bottom-top{
+	width: 1349px;
+	height: 293px;
+	position: relative;
+	border-bottom: 1px solid ghostwhite;
+}
+.bottom-ul{
+	width: 117px;
+	position: absolute;
+	top: 50px;
+	margin-left:35px ;
+}
+.bottom-ul>li>img{
+	width: 107px;
+}
+.bottom-div{
+	margin-left: 230px;
+}
+.bottom-ul1{
+	width: 895px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 50px;
+}
+
+.bottom-ul1>li{
+	float: left;
+	width: 145px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.bottom-ul1>li>a{
+	text-decoration: none;
+	color: #999999;
+}
+.bottom-ul2{
+	width: 745px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 70px;
+}
+.bottom-ul3{
+	width: 745px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 90px;
+}
+.bottom-ul4{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 110px;
+}
+.bottom-ul5{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 130px;
+}
+.bottom-ul6{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left:170px;
+	top: 150px;
+}
+.bottom-ul7{
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left:220px;
+	top: 173px;
+}
+.bottom-ul2>li,.bottom-ul3>li,.bottom-ul4>li,.bottom-ul5>li,.bottom-ul6>li{
+	float: left;
+	width: 145px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.bottom-ul2>li>a,.bottom-ul3>li>a,.bottom-ul4>li>a,.bottom-ul5>li>a,.bottom-ul6>li>a,.bottom-ul7>li>a{
+	text-decoration: none;
+	color: #4d5c6a;
+	font-size: 12px;
+}
+
+.img1{
+	position: absolute;
+	left: 930px;
+	top: 130px;
+	width: 80px;
+	transition:0.5s;
+}
+.img2{
+	position: absolute;
+	left: 1080px;
+	top: 130px;
+	width: 80px;
+	transition:0.5s;	
+}
+.img1:hover,.img2:hover{
+	width: 120px;
+}
+
+p>a,p1,p2>a{
+	text-decoration: none;
+	color: #4d5c6a;
+	font-size: 14px;
+	
+}
+#dt{
+	width: 1349px;
+	height: 100px;
+	/*border: 2px solid ghostwhite;*/
+	position: relative;
+}
+#dt>p2{
+	cursor: pointer;
+}
+#dt>#myMap{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 900px;
+	top: -50px;	
+}

@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.section1{
+	background-image: url("../img/star-bgb.jpg");
+	background-size: 100vw 100vh;
+	position: relative;
+}
+.con-1{
+	width: 1366px;
+	height: 80px;
+	background-color: gainsboro;
+	position: absolute;
+	top: -10px;
+}
+.con-1>div>a>img{
+	width: 115px;
+	height: 66px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.nav-1{
+	position: absolute;
+	top: 10px;
+	left: 200px;
+	
+}
+.nav-1>li{
+	float: left;
+	width: 100px;
+	height:70px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+.nav-1>li:nth-of-type(1){
+	background-color: ghostwhite;
+}
+.nav-1>li:hover{
+	background-color: ghostwhite;
+}
+.nav-1>li>a{
+	text-decoration: none;
+	color: #333;
+}
+.main{
+	color: white;
+}
+.head-main{
+	position: absolute;
+	left: 480px;
+	top: 150px;
+	font-size: 46px;
+	color: skyblue;
+}
+.bottom-line1>p:nth-of-type(1){
+	position: absolute;
+	left: 210px;
+	top: 260px;
+	font-size: 18px;
+}
+.bottom-line1>p:nth-of-type(2){
+	position: absolute;
+	left: 380px;
+	top: 350px;
+	font-size: 18px;
+}
+.bottom-line2{
+	position: absolute ;
+	left: 550px;
+	top: 450px;
+}
+.bottom-line2>a>button{
+	width: 200px;
+	height: 50px;
+	background-color: transparent;
+	font-size: 20px;
+	color: ghostwhite;
+	cursor: pointer;
+	font-family: "微软雅黑";
+}
+#fullpage>div:nth-of-type(2){
+				background-color: white;
+				position: relative;
+}
+.head-main1{
+	position: absolute;
+	left: 520px;
+	top: 45px;
+	font-size: 48px;
+	color: skyblue;
+	font-family: "微软雅黑";	
+}
+.kj{
+	position: absolute;
+	left: 420px;
+	top: 130px;
+	font-size: 20px;
+	color: #333;
+	font-family: "微软雅黑";
+}
+.four{
+	width: 1349px;
+	height: 395px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 170px;	
+}
+
+.four1>li{
+	width: 300px;
+	height: 395px;
+	border: 2px solid ghostwhite;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	box-shadow: 1px 1px 1px ghostwhite;
+	transition:1s;
+}
+.four1>li:hover{
+	transform:scale(1.1);	
+}
+.img1{
+	margin-left: 75px;
+}
+.yz{
+	color: skyblue;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	position: absolute;
+	left: 120px;
+}
+.yy{
+	color: #333;
+	font-family: "微软雅黑";
+	position: absolute;
+	top: 250px;
+	margin-left: 20px;
+}
+.section3{
+	background-image: url("../img/bg2.jpg");
+	background-size: 100vw 100vh;
+	position: relative;
+}
+.top1{
+	width: 1050px;
+	/*border-bottom: 2px solid grey;*/
+	position: absolute;
+	left: 110px;
+	top: 150px;
+}
+.top1>li{
+	width: 300px;
+	height: 40px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	margin-left:  10px;	
+}
+.top1>li:nth-of-type(1){
+	border-bottom: 2px solid skyblue;	
+}
+.top1>li:hover{
+	border-bottom: 2px solid skyblue;
+}
+.top1>li>a{
+	font-family: "微软雅黑";
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.hr{
+	width: 1100px;
+	border: 1px solid gainsboro;
+	position: absolute;
+	left: 100px;
+	top: 210px;
+}
+.txt{
+	position: absolute;
+	left: 550px;
+	top: 250px;
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.bottom2{
+	position: absolute;
+	left: 100px;
+	width: 1100px;
+	height: 250px;
+	/*background-color: red;*/
+}
+.bottom2>div{
+	margin-left: 80px;
+	float: left;
+	color: white;
+}
+.bottom2-p{
+	margin-left: 50px;
+}
+#fullpage>div:nth-of-type(4){
+				background-color:white;
+				position: relative;
+}
+.head-last{
+	position: absolute;
+	left: 480px;
+	top: 20px;
+	font-size: 30px;
+	color: skyblue;
+	font-family: "微软雅黑";	
+}
+.last{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+.last1{
+	position: absolute;
+	left: 600px;
+	top: 350px;
+	font-size: 30px;
+	color: skyblue;
+	font-family: "微软雅黑";	
+}
+.radio{
+	width: 300px;
+	border: 2px solid skyblue;
+	position: absolute;
+	left: 515px;
+	top: 400px;
+	box-shadow: 2px 2px 2px skyblue;
+}
+.second{
+	/*width: 1000px;*/
+	height: 150px;
+	/*background-color: red;*/
+	position: absolute;
+	left: 300px;
+	top: 450px;
+}
+.second>.second1>.second2{
+	float: left;
+	margin-left: 50px;
+	
+}
+.second>.second1>.second2>p{
+	font-family: "微软雅黑";
+}			

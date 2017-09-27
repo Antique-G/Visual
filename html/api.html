@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.10.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+			    $('#fullpage').fullpage({
+			    	"scrollingSpeed":700,//滚动速度
+			    	"navigation":true,//点点点
+			    	"navigationPosition":"right",//点点点的位置
+					"controlArrowColor":"grey",
+					"loopBottom":true,
+					afterLoad : function(anchorLink,index){
+						if(index===4){
+				    		$("p").addClass("animated bounceIn")
+				    	}
+						
+					},
+					onLeave: function(index,nextIndex,direction){
+				    	if(index===4){
+				    		$("p").removeClass("animated bounceIn")
+				    	}
+				    }
+			    });//激活fullpage
+			   
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<!--第一屏-->
+			<div class="section section1">
+			      <div class="container con-1 ">
+                    <div>
+                        <a href="visual.html"><img src="../img/newlogo.png" /></a>
+                    </div>
+                    <ul class="nav-1">
+                            <li class="dropdown active"><a href="">API首页</a></li>
+                            <li class="dropdown"><a href="">接入文档</a></li>
+                            <li class="dropdown"><a href="">快速开始</a> </li>
+                            <li class="dropdown"><a href="">联系我们</a></li>
+                            <li class="dropdown"><a href="" target="_blank">申请接入</a></li>
+                    </ul> 
+                </div>
+                
+                <div class="pl-0 pr-0 main" style="">
+                    <h1 class="head-main">成为视觉中国API合作伙伴</h1>
+                <div class="bottom-line1">
+	                <p >通过API（应用程序编程接口）连接第三方产品平台，以正版、经济、高效、便捷的产品优势和服务理念，为企业提供创意所需</p>
+	                <p >创意无极限，应用开发者可结合应用场景自由调用API，满足用户一切素材需求</p>
+                </div>
+                <div class="bottom-line2 "><a href="" ><button >申请接入API</button></a></div>
+                </div>
+            
+			</div>
+			
+			
+			<div class="section">
+				<h1 class="head-main1">我们的优势</h1>
+				<p class="kj">快捷实现用户在您的平台上查找、下载素材的流畅体验</p>
+				
+				<div class="four">
+					<ul class="four1">
+						<li>
+							<img src="../img/interget1.jpg" class="img1">
+							<p class="yz">优质</p>
+							<p class="yy">1.26亿创意图片，1.43亿编辑图片，超过500万条视频素材，全球内容合作伙伴300+</p>
+							
+						</li>
+						<li>
+							<img src="../img/interget2.jpg" class="img1">
+							<p class="yz">优质</p>
+							<p class="yy">1.26亿创意图片，1.43亿编辑图片，超过500万条视频素材，全球内容合作伙伴300+</p>
+						</li>
+						<li>
+							<img src="../img/interget3.jpg" class="img1">
+							<p class="yz">优质</p>
+							<p class="yy">1.26亿创意图片，1.43亿编辑图片，超过500万条视频素材，全球内容合作伙伴300+</p>
+						</li>
+						<li>
+							<img src="../img/interget4.jpg" class="img1">
+							<p class="yz">优质</p>
+							<p class="yy">1.26亿创意图片，1.43亿编辑图片，超过500万条视频素材，全球内容合作伙伴300+</p>
+						</li>
+					</ul>
+				</div>
+                </div>
+               
+			
+			
+			
+			<div class="section section3">
+				
+                <h1 class="head-main1">应用的场景</h1>
+                   <ul class="top1">
+                    <li ><a href="" >产品集成</a></li>
+                    <li ><a href="">DAM/CRM/CMS集成</a></li>
+                    <li ><a href="" >分销联盟集成</a></li>
+                </ul>
+               <div class="hr"></div>
+                 <p class="txt">用户可以直接从您的产品中搜索并下载视觉中国素材</p>
+            <div class="bottom2">
+            	<div class="col-xs-3 col-sm-3 txt-ct"><img src="../img/interget1.jpg" alt="">
+                            <p class="txt-ct color-f mt-10 bottom2-p">社交平台</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 txt-ct"><img src="../img/interget2.jpg" alt="">
+                            <p class="txt-ct color-f mt-10 bottom2-p">移动应用</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 txt-ct"><img src="../img/interget3.jpg" alt="">
+                            <p class="txt-ct color-f mt-10 bottom2-p">商业平台</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 txt-ct"><img src="../img/interget4.jpg" alt="">
+                            <p class="txt-ct color-f mt-10 bottom2-p">创意工具</p>
+                        </div>
+            </div>
+			</div>
+			
+			
+			<div class="section">
+				<h1 class="head-last">已成功接入视觉中国API的伙伴</h1>
+				<img src="../img/logo-company.png" class="last"/>
+				 <p class="contact txt-ct mt-20 last1">联系我们</p>
+				 <div class="radio"></div>
+				 <div class="second">
+				 <div class="container clearfix second1" style="width:900px;margin:0 auto;">
+                    <div class="col-sm-4 txt-ct pl-0 pr-0 pb-10 second2">
+                        <p class="fs-18 color000"><img src="../img/wechatlogo1.png" class="mr-20" alt="">微信：chance1002</p>
+                        
+                    </div>
+                    <div class="col-sm-4 txt-ct pl-0 pr-0 pb-10 second2">
+                        <p class="fs-18 color000"><img src="../img/qqlogo1.png" class="mr-20" alt="">QQ：68804375</p>
+                        
+                        
+                    </div>
+                    <div class="col-sm-4 txt-ct pl-0 pr-0 pb-10 second2">
+                        <p class="fs-18 color000"><img src="../img/emaillogo1.png" class="mr-20" alt="">邮箱：chao.han@vcg.com</p>
+                        
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div>
+	</body>
+
+</html>

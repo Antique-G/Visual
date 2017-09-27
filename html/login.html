@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.bg{
+				width: 100vw;
+				height: 100vh;
+			}
+			body{
+				position: relative;
+			}
+			div{
+				width: 365px;
+				height: 405px;
+				border: 1px solid  white;
+				box-shadow: 1px 2px 2px  2px white;
+				position: absolute;
+				left: 35%;
+				top: 100px;
+				z-index: 1;
+				background-color: white;
+			}
+			.ul1{
+				width: 365px;
+				height:20px;
+			}
+			.ul1>li>a{
+				width: 182.5px;
+				height:40px;
+				float: left;
+				text-align: center;
+				line-height: 40px;
+				color: black;
+				cursor: pointer;
+				font-size: 20px;
+			}
+			.sj{
+				width: 100px;
+				height: 57px;
+				margin:20px  130px;
+			}
+			.ipt,.pass,.log{
+				width: 280px;
+                height: 40px;
+                border: 1px solid gainsboro;
+                margin-left: 35px;
+			}
+			.pass,.log{
+				margin-top:30px;
+			}
+			.log{
+				font-size: 20px;
+				background-color: #f84949;
+				color: white;
+				cursor: pointer;
+			}
+			.ol1>li{
+				width: 150px;
+				height:40px;
+				float: left;
+				margin-top: 50px;
+				margin-left: 30px;
+			}
+			a{
+				text-decoration: none;
+				color: #337ab7;
+			}
+			.log{
+				border: none;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<img src="../img/dl.jpg" class="bg"/>
+	    <div>
+	    	<ul class="ul1">
+	    		<li><a href="login.html">登录</a></li>
+	    		<li><a href="register.html"  style="background-color: #cfc7c4;">注册</a></li>
+	    	</ul>
+	    	<img class="sj" src="../img/newlogo.png">
+	    	<input type="text"  placeholder="请输入用户名" class="ipt" value=""/>
+	    	<input type="password"  placeholder="请输入密码" class="pass" value=""/>
+	    	<a href="visual.html"><input type="button" value="登录" class="log"/></a>
+	    	
+	    	<ol class="ol1">
+	    		<li><input type="checkbox"/>记住密码</li>
+	    		<li><a href="#"> 忘记密码？</a></li>
+	    	</ol>
+	    </div>
+	    <script type="text/javascript" src="../js/cookie.js" ></script>
+		<script type="text/javascript">
+			var username=document.getElementsByClassName("ipt")[0];
+			var password=document.getElementsByClassName("pass")[0];
+			var btn=document.getElementsByClassName("log")[0];
+			if(localStorage.getItem("yhm")){
+				username.value=localStorage.getItem("yhm");
+				password.value=localStorage.getItem("yhm");
+				
+			}
+			btn.onclick=function(){
+				localStorage.setItem("yhm",username.value);
+				localStorage.setItem("yhm",password.value);
+				
+			}
+		</script>
+			
+	</body>
+
+</html>

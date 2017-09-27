@@ -1,0 +1,175 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	}
+.title{
+	width: 1349px;
+	height: 1616px;
+	/*border: 1px solid red;*/
+}
+.ul1{
+	width: 1349px;
+	height: 40px;
+	background-color: #f2f2f2;
+}
+.ul1>li{
+	height: 40px;
+	float: left;
+	margin-left: 149px;
+	text-align: center;
+	line-height: 40px;	
+}
+.ul1>li:nth-of-type(2){
+	margin-right: 149px;
+	float: right;
+	
+}
+.div1{
+	width: 1349px;
+	height: 82px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.div11>a>img{
+	width: 113px;
+	height: 66px;
+	margin-left: 149px;
+	margin-top: 10px;
+}
+.div12{
+	width: 700px;
+	height: 78px;
+	position: absolute;
+	left: 500px;
+	top: -0.5px;
+}
+.div12>.right>li{
+	width: 135px;
+	height: 80px;
+	float: left;
+	text-align: center;
+	line-height: 80px;
+	cursor: pointer;
+}
+.div12>.right>li:nth-of-type(1){
+	background-color: #c21a1f;
+}
+.div12>.right>li>img{
+	width: 20px;
+	height: 20px;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+.div12>.right>li:hover{
+	background-color: #c21a1f;
+	color: white;
+}
+.img>img{
+	width: 1349px;
+	height: 406px;
+}
+.bus{
+	width: 1349px;
+	height: 137px;
+}
+.bus>img{
+	width: 268px;
+	height: 45px;
+	margin: 49px 149px;
+}
+.banner{
+	width: 1349px;
+	height: 394px;
+	/*border: 1px solid black;*/
+}
+.banner>.ban{
+	width: 1056px;
+	height: 394px;
+	/*background-color: red;*/	
+	margin: auto;
+}
+.banner>.ban>li{
+	width: 318px;
+	height: 394px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-left: 25px;
+}
+.banner>.ban>li>p{
+	margin-top: 25px;
+}
+.banner>.ban>li>img{
+	width: 300px;
+	height: 200px;
+	margin-top: 20px;
+}
+.new{
+	width: 1349px;
+	height: 189px;
+	/*background-color: red;*/
+	position: relative;
+}
+.new>a>img{
+	width: 215px;
+	height: 48px;
+	margin-left: 149px;
+	position: absolute;
+	top: 130px;
+}
+.buttom{
+	width: 1349px;
+	height: 97px;
+	/*background-color: yellow;*/
+}
+.buttom>ul{
+	width: 1056px;
+	height: 97px;
+	/*background-color: red;*/
+	margin: auto;
+}
+.buttom>ul>li{
+	width: 318px;
+	height: 97px;
+	/*background-color: yellow;*/
+	position: relative;
+	float: left;
+	margin: 0 10px;
+}
+.buttom>ul>li>a{
+	position: absolute;
+	top: 5px;
+	font-size: 10px;
+}
+.buttom>ul>li>p{
+	position: absolute;
+	left:115px;
+	font-size: 16px;
+	color: #ba9eac;
+	top: 50px;
+}
+.DB{
+	width: 1349px;
+	height: 260px;
+	/*background-color: red;*/
+	position: relative;
+}
+.DB>ul{
+	width: 1349px;
+	height: 204px;
+	background-color:#333333;
+	position: absolute;
+	bottom: 0px;
+}
+.DB>ul>li{
+	margin-top: 20px;
+	color: white;
+	margin-left: 149px;
+	line-height: 25px;
+}
+.DB>ul>li>a{
+	margin-top: 20px;
+	color: white;
+}
